@@ -9,16 +9,16 @@ const app = express()
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-// app.use(cors())
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*")
-  // 请求头  x-token
-  res.header("Access-Control-Allow-Headers", "*")
-  // 请求方法  post get put delete patch
-  res.header("Access-Control-Allow-Methods", "*")
-  // 下一步
-  next()
-})
+app.use(cors())
+// app.use((req, res, next) => {
+//   res.header("Access-Control-Allow-Origin", "*")
+//   // 请求头  x-token
+//   res.header("Access-Control-Allow-Headers", "*")
+//   // 请求方法  post get put delete patch
+//   res.header("Access-Control-Allow-Methods", "*")
+//   // 下一步
+//   next()
+// })
 
 app.use(session({
   //配置加密字符串，他会在原有的基础上和字符串拼接起来去加密
