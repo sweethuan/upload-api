@@ -14,7 +14,7 @@ function db(sql) {
     const pool  = mysql.createPool({
       host     : 'localhost',	//本机
       user     : 'root',		//账号root
-      password : 'root',	//密码12345
+      password : 'Baowei@68790005',	//密码12345
       database : 'cms'	//数据库名
     })
      
