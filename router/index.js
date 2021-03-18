@@ -15,7 +15,7 @@ function db(sql) {
       host     : 'localhost',	//本机
       user     : 'root',		//账号root
       password : 'root',	//密码12345
-      database : 'test'	//数据库名
+      database : 'cms'	//数据库名
     })
      
     pool.getConnection(function(err, connection) {
